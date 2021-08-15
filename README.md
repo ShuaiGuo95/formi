@@ -386,11 +386,9 @@ if __name__ == '__main__':
 
 在操作界面按下键盘上的方向键上下左右，就可以控制贪吃蛇的移动方向。怎么样，是不是很有趣~
 
-## 第2章 Python基本数据类型与语法
+## 第2章 Python基本语法
 
-这一章我们主要来学习Python语言使用的基本数据类型和基本语法，便于以后读写Python代码。
-
-当然我们只学习最重要的部分。
+这一章我们主要来学习Python语言使用的基本语法，便于以后读写Python代码。当然我们只学习最重要的部分。
 
 ### 2.1 Python基本数据类型和运算符
 
@@ -399,7 +397,8 @@ Python中的**变量**需要先**声明**后使用。看下面一段代码：
 ```python
 counter = 100          # 整型变量
 miles   = 1000.0       # 浮点型变量
-name    = "fairy"      # 字符串
+name    = "fairy"      # 字符串，注意字符串既可以用双引号，也可以用单引号，"fairy"和'fairy'在python里是等同的
+flag    = True		   # 布尔类型，其值仅可以为True或False
 
 print (counter)
 print (miles)
@@ -414,7 +413,9 @@ print (name)
 (base) PS C:\Users\15617> fairy
 ```
 
-这段代码中**声明**并**赋值**了整型变量counter，浮点型变量miles，字符串类型变量name，然后调用Python自带的print函数输出各变量。
+这段代码中**声明**并**赋值**了整型变量counter，浮点型变量miles，字符串类型变量name，和布尔（Bool）类型的变量flag，然后调用Python自带的print函数输出各变量。
+
+注意布尔类型变量的值仅可为True或False，在运算和判断中等价于1和0，用于标记“是”和“非”。
 
 整型、浮点型可以用**运算符**进行各种运算，如以下代码：
 
@@ -436,8 +437,68 @@ c = a // b # 整除运算，将a/b的商向下取整，例如，9/2=4.5,9//2=4
 
 ```python
 a = "mi"
-b = "Xmimi"
+b = "Xiao mi"
 
-c = a + b # 字符串拼接，得到的c为"mi Xmimi"
+c = b + a # 字符串拼接，得到的c为新字符串"Xiao mimi"
+c = a[1]  # 通过索引获取字符，得到的字符c="i"，字符串中的字符从左到右索引分别为0，1，2，...
+c = b[0:5] # 字符串截取，这里截取了第0~4个字符，得到的字符串c="Xiao "，注意不包括第5个字符，注意空格也是字符
+c = a in b # 成员运算，如果字符串a存在于字符串b中，则c为布尔类型的True，否则为False
 ```
 
+小仙女可以试着更改一下参数或者a, b的值，运行一下代码，输出c的值，看看是否符合自己的预期。
+
+### 2.2 Python基本数据结构
+
+Python中有四种基本的数据结构：列表，元组，字典，集合，如下面的代码所定义的：
+
+```python
+list = ["Xmm", 1994, 4.16, True] 
+# 列表中的元素可以为上一节讲的各种数据类型
+
+tuple = ("Gs", 1995, 2.28, True) 
+# 元组和列表一样，区别仅仅在于元组中的值定义好之后无法更改
+
+dictionary = {"name":"跟油油学Python", 2:8.15, "site":"formi_python"} 
+# 字典用于建立自定义的对应关系，每组对应关系包含一个key一个value，在冒号前后;key和value的值均可为上一节讲的各种数据类型
+
+set = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+# 集合是一个无序的不重复元素集，每个元素可为上一节讲的各种数据类型。
+```
+
+我们只介绍最常见的数据结构list的最常见的用法，别的数据结构我们知道有它们的主要特性就好啦，需要用的时候再学习：
+
+```python
+list = ['red', 'green', 'blue', 'yellow', 'white', 'black'] # 一个包含7个字符串的列表
+
+# 列表查询
+print(list[0]) # 输出list[0]，即第0个元素'red'
+print(list[2]) # 输出list[2]，即第2个元素'blue'
+print(list[-1]) # 输出第-1个元素，即倒数第一个元素'black'
+print(list[-2]) # 输出第-2个元素，即'white'，其他以此类推
+print(list[1:4]) # 输出第1~3个元素，即['green', 'blue', 'yellow']，注意得到的结果是一个新的list
+print(list[1:-2]) # 输出第1~倒数第3个元素，即['green', 'blue', 'yellow']，注意得到的结果是一个新的list
+print(list[3:]) # 输出第3个以及后面的所有元素，即['yellow', 'white', 'black']，注意得到的结果是一个新的list
+
+# 列表修改
+list[2] = 'pink' # 将第2个元素赋值为'pink'
+print(list) # 猜猜输出结果是什么？
+list.append('orange') # 在列表末尾加入元素'orange'
+print(list) # 猜猜输出结果是什么？
+del list[2] #删除列表第2个元素
+print(list) # 猜猜输出结果是什么？
+
+# 列表脚本操作符
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+print(list1 + list2) # "+"可以将list1和list2拼接为新的list
+print(3 in list1) # "in"可以判断一个元素是否存在于一个list中，返回一个布尔类型的True或False，这里输出True
+
+# 列表常用函数
+print(len(list)) # len()函数可以得到列表中元素的个数，返回值是整型
+print(max(list)) # max()函数返回list中元素的最大值
+print(min(list)) # min()函数返回list中元素的最小值
+```
+
+试着运行一下这段代码，看得到的效果和我们预期的一样不一样吧~
+
+注意这里都是用print()函数将结果直接输出出来了，当然也可以把结果赋给新的变量。
