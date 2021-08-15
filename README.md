@@ -1,14 +1,18 @@
-## 欢迎肖仙女小朋友！
+## 跟油油学Python
 
-欢迎肖仙女小朋友来到幼儿园最新的Python、NLP、爬虫在线学习兴趣班！
+欢迎肖仙女小朋友来到幼儿园最新的Python在线学习兴趣班 !
 
 祝肖仙女小朋友学得开心、学得快乐、学得有收获！
 
-有任何问题请随时与课代表郭油油小朋友联系！
+有任何问题请随时与课代表郭油油老师联系！
 
-### Python
+### Python是什么
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Python目前是一种非常流行的编程语言，用于沟通人与计算机，便于人们更好地使用计算机的算力和资源。
+
+计算机上的各种软件都是用编程语言写成的，Python正是这样的一门语言，主要特点是简单明了、功能强大，只有你想不到，没有它做不到。
+
+我们后面要做的NLP、爬虫等内容，都是要基于Python语言来做的，所以对Python有基本了解是很有必要的。
 
 ```markdown
 Syntax highlighted code block
