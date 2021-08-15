@@ -18,6 +18,8 @@ Python语言正是当前最流行的编程语言，主要特点是简单明了�
 
 Python在各种工程和科研领域都有应用，尤其在人工智能领域，几乎占垄断地位。
 
+Python3目前正在完全取代Python2，二者大同小异，因此我们只学习Python3，也只用Python3，本文中的所有Python均指Python3. 
+
 我们后面要做的爬虫、NLP等内容都是基于Python语言的，所以对Python有基本了解是很有必要的。
 
 ### 1.2 安装Anaconda
@@ -89,7 +91,7 @@ print("Beautiful fairy, happy fairy!")
 
 现在我们可以执行代码了。在PowerShell中输入**"python "+待执行的.py文件名**，这里应该是“python test.py"，如下：
 
-```python
+```shell
 (base) PS E:\100dataset> python test.py
 ```
 
@@ -380,5 +382,62 @@ if __name__ == '__main__':
         pass
 ```
 
+注意，代码中"#"后面的部分为**注释**，是为了方便读者阅读代码而存在的，不具备语法意义。
+
 在操作界面按下键盘上的方向键上下左右，就可以控制贪吃蛇的移动方向。怎么样，是不是很有趣~
+
+## 第2章 Python基本数据类型与语法
+
+这一章我们主要来学习Python语言使用的基本数据类型和基本语法，便于以后读写Python代码。
+
+当然我们只学习最重要的部分。
+
+### 2.1 Python基本数据类型和运算符
+
+Python中的**变量**需要先**声明**后使用。看下面一段代码：
+
+```python
+counter = 100          # 整型变量
+miles   = 1000.0       # 浮点型变量
+name    = "fairy"      # 字符串
+
+print (counter)
+print (miles)
+print (name)
+```
+
+执行该代码可以得到：
+
+```shell
+(base) PS C:\Users\15617> 100
+(base) PS C:\Users\15617> 1000.0
+(base) PS C:\Users\15617> fairy
+```
+
+这段代码中**声明**并**赋值**了整型变量counter，浮点型变量miles，字符串类型变量name，然后调用Python自带的print函数输出各变量。
+
+整型、浮点型可以用**运算符**进行各种运算，如以下代码：
+
+```python
+a = 10
+b = 21
+
+c = a # "="是赋值符号，也是一种运算符
+c = a + b # 加法
+c = a - b # 减法
+c = a * b # 乘法
+c = a / b # 除法
+c = a % b # 取模，返回a除以b得到的余数
+c = a ** b # 幂运算，返回a的b次幂
+c = a // b # 整除运算，将a/b的商向下取整，例如，9/2=4.5,9//2=4
+```
+
+字符串常见的运算符和运算如下：
+
+```python
+a = "mi"
+b = "Xmimi"
+
+c = a + b # 字符串拼接，得到的c为"mi Xmimi"
+```
 
