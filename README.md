@@ -14,7 +14,7 @@
 
 我们通过安装Anaconda来搭建Python环境。Anaconda是当前最流行的Python发行版本，其中包含了Python和许多常用工具包及其依赖，还提供了conda、pip等工具用于环境和包管理，十分方便。我们可以在[这里](https://www.anaconda.com/products/individual#Downloads)下载最新的安装包，建议下载Windows 64版本，如下图所示。
 
-<img src="https://raw.githubusercontent.com/ShuaiGuo95/formi_python/master/images/anaconda.png" width = "960" height = "480" alt="图片名称" align=center />
+![anaconda](https://raw.githubusercontent.com/ShuaiGuo95/formi_python/master/images/anaconda.png)
 
 安装完成后，按下Windows键，找到Anaconda3 (64-bit) 文件夹，然后打开Anaconda Powershell Prompt (Anaconda3)，输入
 
