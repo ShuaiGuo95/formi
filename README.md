@@ -6,11 +6,11 @@
 
 有任何问题请随时与郭油油老师联系！
 
-## 第一章 环境搭建与入门
+## 第1章 环境搭建与入门
 
 这一章我们先了解什么是Python，然后在Windows上搭建Python环境，学会如何运行Python代码，再跑几个样例代码做测试，感受一下Python的魅力。
 
-### 1. Python是什么
+### 1.1 Python是什么
 
 计算机上的各种软件都是用编程语言写成的，编程语言可以沟通人与计算机，便于人们更好地使用计算机的算力和资源。
 
@@ -20,7 +20,7 @@ Python在各种工程和科研领域都有应用，尤其在人工智能领域�
 
 我们后面要做的爬虫、NLP等内容都是基于Python语言的，所以对Python有基本了解是很有必要的。
 
-### 2. 安装Anaconda
+### 1.2 安装Anaconda
 
 我们通过安装Anaconda来搭建Python环境。
 
@@ -49,7 +49,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 现在可以关闭PowerShell了。
 
-### 3. 安装Sublime Text 3
+### 1.3 安装Sublime Text 3
 
 安装完了Python环境，我们现在需要一个编辑器来写Python代码，这里推荐的是Sublime Text 3，也是为师最喜欢的代码和文本编辑器。
 
@@ -61,7 +61,7 @@ Sublime Text3的特点是简洁轻便美观并且免费。唯一缺点是偶尔�
 
 安装还是建议安装在D盘，安装完成后在桌面上会出现Sublime Text 3的图标，打开即可使用。
 
-### 4. 小仙女的第一个Python代码
+### 1.4 小仙女的第一个Python代码
 
 现在我们来写第一个Python代码。 
 
@@ -75,7 +75,9 @@ print("Beautiful fairy, happy fairy!")
 
 然后在文件名一栏输入**test.py**，点击保存。注意，目录应尽量避免中文名。
 
-代码写完了，现在我们来执行这份名为**test.py**的代码。首先需要打开**PowerShell**并切换目录。在文件管理器中打开你刚才选择的目录，在地址栏单击鼠标，然后**Ctrl+C**可以复制当前目录位置，如下图，我们复制了E盘100dataset文件夹的位置：
+代码写完了，现在我们来执行这份名为**test.py**的代码。首先需要打开**PowerShell**并切换目录。
+
+在文件管理器中打开你刚才选择的目录，在地址栏单击鼠标，然后**Ctrl+C**可以复制当前目录位置，如下图，我们复制了E盘100dataset文件夹的位置：
 
 ![sublime](https://raw.githubusercontent.com/ShuaiGuo95/formi_python/master/images/path.png)
 
@@ -99,7 +101,7 @@ print("Beautiful fairy, happy fairy!")
 
 怎么样，是不是很简单。当然，字符串可以是其他任何内容。
 
-### 5. Python输出九九乘法口诀表
+### 1.5 Python输出九九乘法口诀表
 
 我们再来看一个例子。将test.py中的内容全部删掉，输入以下内容（可以复制粘贴）：
 
@@ -118,7 +120,7 @@ for i in range(1, 10):
 
 并按下回车，怎么样，是不是得到了一个九九乘法口诀表？试着读一下代码，能读懂它的逻辑吗？
 
-### 6. Python输出心形
+### 1.6 Python输出心形
 
 将**test.py**中的内容全部删掉，输入以下内容：
 
@@ -134,7 +136,7 @@ for item in words.split():
 
 给咪咪比个❤哦~
 
-### 7. Python小游戏：贪吃蛇
+### 1.7 Python小游戏：贪吃蛇
 
 运行这个小游戏的代码需要先安装一个名为**pygame**的包，在PowerShell中输入以下内容并回车就可以使用pip安装新的工具包了：
 
