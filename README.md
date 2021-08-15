@@ -4,40 +4,15 @@
 
 祝肖仙女小朋友学得开心、学得快乐、学得有收获！
 
-有任何问题请随时与课代表郭油油老师联系！
+有任何问题请随时与郭油油老师联系！
 
 ### Python是什么
 
-Python目前是一种非常流行的编程语言，用于沟通人与计算机，便于人们更好地使用计算机的算力和资源。
+计算机上的各种软件都是用编程语言写成的，编程语言可以沟通人与计算机，便于人们更好地使用计算机的算力和资源。Python语言正是当前最流行的编程语言，主要特点是简单明了、功能强大、扩展性强，只有你想不到，没有它做不到。Python在各种工程和科研领域都有应用，尤其在人工智能领域，几乎占垄断地位。我们后面要做的爬虫、NLP等内容都是基于Python语言的，所以对Python有基本了解是很有必要的。
 
-计算机上的各种软件都是用编程语言写成的，Python正是这样的一门语言，主要特点是简单明了、功能强大，只有你想不到，没有它做不到。
+### 安装Anaconda
 
-我们后面要做的NLP、爬虫等内容，都是要基于Python语言来做的，所以对Python有基本了解是很有必要的。
+我们通过安装Anaconda来搭建Python环境。Anaconda是当前最流行的Python发行版本，其中包含了Python和许多常用工具包及其依赖，还提供了conda、pip等工具用于环境和包管理，十分方便。我们可以在[这里](https://www.anaconda.com/products/individual#Downloads)下载最新的安装包，建议下载Windows 64版本，如下图所示。
 
-```markdown
-Syntax highlighted code block
+![anaconda](https://github.com/ShuaiGuo95/formi_python/images/anaconda.png)
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ShuaiGuo95/formi/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
