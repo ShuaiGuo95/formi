@@ -6,13 +6,27 @@
 
 有任何问题请随时与郭油油老师联系！
 
-### Python是什么
+## 第一章 环境搭建与入门
 
-计算机上的各种软件都是用编程语言写成的，编程语言可以沟通人与计算机，便于人们更好地使用计算机的算力和资源。Python语言正是当前最流行的编程语言，主要特点是简单明了、功能强大、扩展性强，只有你想不到，没有它做不到。Python在各种工程和科研领域都有应用，尤其在人工智能领域，几乎占垄断地位。我们后面要做的爬虫、NLP等内容都是基于Python语言的，所以对Python有基本了解是很有必要的。
+这一章我们先了解什么是Python，然后在Windows上搭建Python环境，学会如何运行Python代码，再跑几个样例代码做测试，感受一下Python的魅力。
 
-### 安装Anaconda
+### 1. Python是什么
 
-我们通过安装Anaconda来搭建Python环境。Anaconda是当前最流行的Python发行版本，其中包含了Python和许多常用工具包及其依赖，还提供了conda、pip等工具用于环境和包管理，十分方便。我们可以在[这里](https://www.anaconda.com/products/individual#Downloads)下载最新的安装包，建议下载Windows 64 bit版本安装包，如下图所示：
+计算机上的各种软件都是用编程语言写成的，编程语言可以沟通人与计算机，便于人们更好地使用计算机的算力和资源。
+
+Python语言正是当前最流行的编程语言，主要特点是简单明了、功能强大、扩展性强，只有你想不到，没有它做不到。
+
+Python在各种工程和科研领域都有应用，尤其在人工智能领域，几乎占垄断地位。
+
+我们后面要做的爬虫、NLP等内容都是基于Python语言的，所以对Python有基本了解是很有必要的。
+
+### 2. 安装Anaconda
+
+我们通过安装Anaconda来搭建Python环境。
+
+Anaconda是当前最流行的Python发行版本，其中包含了Python和许多常用工具包及其依赖，还提供了conda、pip等工具用于环境和包管理，十分方便。
+
+我们可以在[这里](https://www.anaconda.com/products/individual#Downloads)下载最新的安装包，建议下载Windows 64 bit版本安装包，如下图所示：
 
 ![anaconda](https://raw.githubusercontent.com/ShuaiGuo95/formi_python/master/images/anaconda.png)
 
@@ -21,6 +35,8 @@
 ```shell
 (base) PS C:\Users\15617> python
 ```
+
+Anaconda Powershell Prompt (Anaconda3)就是我们后面经常要用到的PowerShell，这是Anaconda提供给我们的。
 
 然后按下回车，看到类似如下输出即可表明Anaconda安装成功：
 
@@ -31,45 +47,59 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-### 安装Sublime Text 3
+现在可以关闭PowerShell了。
 
-安装完了Python环境，我们现在需要一个编辑器来写Python代码，这里推荐的是Sublime Text 3，也是为师最喜欢的代码和文本编辑器，特点是简洁轻便美观并且免费。唯一缺点是偶尔会弹出来购买提示框，按Esc忽略即可。如下图，可以在[这里](https://www.sublimetext.com/3)下载Windows 64 bit版本安装包。
+### 3. 安装Sublime Text 3
+
+安装完了Python环境，我们现在需要一个编辑器来写Python代码，这里推荐的是Sublime Text 3，也是为师最喜欢的代码和文本编辑器。
+
+Sublime Text3的特点是简洁轻便美观并且免费。唯一缺点是偶尔会弹出来购买提示框，按Esc忽略即可。
+
+如下图，可以在[这里](https://www.sublimetext.com/3)下载Windows 64 bit版本安装包。
 
 ![sublime](https://raw.githubusercontent.com/ShuaiGuo95/formi_python/master/images/sublime.png)
 
 安装还是建议安装在D盘，安装完成后在桌面上会出现Sublime Text 3的图标，打开即可使用。
 
-### 小仙女的第一个Python代码
+### 4. 小仙女的第一个Python代码
 
-现在我们来写第一个Python代码，也是最简单的"Hello World!". 
+现在我们来写第一个Python代码。 
 
-打开Sublime Text 3，在键盘上按**Ctrl+N**，这样就新建了一个文件。在文件中输入以下内容（可以复制粘贴哦）：
+打开Sublime Text 3，在键盘上按**Ctrl+N**，这样就新建了一个文件。在文件中输入以下内容，只有一句话，调用print函数输出双引号引起来的字符串：
 
 ```python
-print("Hello World!")
+print("Beautiful fairy, happy fairy!")
 ```
 
-然后在键盘上按**Ctrl+S**，在**另存为**框中选择一个目录，这里作为示范选的是E盘100dataset文件夹。然后在文件名一栏输入**test.py**，点击保存。注意，目录应尽量避免中文名。
+然后在键盘上按**Ctrl+S**，在**另存为**框中选择一个目录，这里作为示例选的是E盘100dataset文件夹。
 
-代码写完了，现在我们来执行这份名为**test.py**的代码。首先需要打开PowerShell并切换目录。在文件管理器中打开你刚才选择的目录，在地址栏单击鼠标，然后**Ctrl+C**可以复制当前目录位置，如下图，我们复制了E盘100dataset文件夹的位置：
+然后在文件名一栏输入**test.py**，点击保存。注意，目录应尽量避免中文名。
+
+代码写完了，现在我们来执行这份名为**test.py**的代码。首先需要打开**PowerShell**并切换目录。在文件管理器中打开你刚才选择的目录，在地址栏单击鼠标，然后**Ctrl+C**可以复制当前目录位置，如下图，我们复制了E盘100dataset文件夹的位置：
 
 ![sublime](https://raw.githubusercontent.com/ShuaiGuo95/formi_python/master/images/path.png)
 
-然后依照上部分讲的方式，打开Anaconda Powershell Prompt (Anaconda3)，在其中输入"cd "，然后**Ctrl+V**粘贴我们刚才复制的目录位置，再回车，即可将PowerShell的工作目录转移到我们代码的位置下，如这里我们转移到了"E:\100dataset"的位置：
+然后依照上部分讲的方式，打开PowerShell，在其中输入"cd "，然后**Ctrl+V**粘贴我们刚才复制的目录位置，再回车，即可将PowerShell的工作目录转移到我们代码的位置下，如这里我们转移到了"E:\100dataset"的位置：
 
 ```shell
 (base) PS C:\Users\15617> cd E:\100dataset
 ```
 
-现在我们可以执行代码了。在PowerShell中输入"python test.py"，如下：
+现在我们可以执行代码了。在PowerShell中输入**"python "+待执行的.py文件名**，这里应该是“python test.py"，如下：
 
 ```python
 (base) PS E:\100dataset> python test.py
 ```
 
-然后按下回车键，然后你就可以看到PowerShell窗口在空白行输出的字符串“Hello World!”啦，怎么样，是不是很简单。
+然后按下回车键，然后你就可以看到PowerShell窗口在空白行输出的字符串啦：
 
-### Python输出九九乘法口诀表
+```shell
+(base) PS E:\100dataset> Beautiful fairy, happy fairy!
+```
+
+怎么样，是不是很简单。当然，字符串可以是其他任何内容。
+
+### 5. Python输出九九乘法口诀表
 
 我们再来看一个例子。将test.py中的内容全部删掉，输入以下内容（可以复制粘贴）：
 
@@ -88,7 +118,7 @@ for i in range(1, 10):
 
 并按下回车，怎么样，是不是得到了一个九九乘法口诀表？试着读一下代码，能读懂它的逻辑吗？
 
-## Python输出心形
+### 6. Python输出心形
 
 将**test.py**中的内容全部删掉，输入以下内容：
 
@@ -104,7 +134,7 @@ for item in words.split():
 
 给咪咪比个❤哦~
 
-### Python小游戏：贪吃蛇
+### 7. Python小游戏：贪吃蛇
 
 运行这个小游戏的代码需要先安装一个名为**pygame**的包，在PowerShell中输入以下内容并回车就可以使用pip安装新的工具包了：
 
@@ -112,7 +142,7 @@ for item in words.split():
 (base) PS C:\Users\15617> pip install pygame
 ```
 
-等待安装完成，然后在test.py中输入以下代码并以前述方式运行：
+我们以后还会用pip安装和管理其他工具包。等待安装完成，然后在test.py中输入以下代码并以前述方式运行：
 
 ```python
 import random
@@ -349,3 +379,4 @@ if __name__ == '__main__':
 ```
 
 在操作界面按下键盘上的方向键上下左右，就可以控制贪吃蛇的移动方向。怎么样，是不是很有趣~
+
